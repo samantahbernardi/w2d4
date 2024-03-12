@@ -32,8 +32,6 @@ header {
 #settings img {
     width: 40px;
     height: 40px;
-
-
 }
 
 
@@ -49,49 +47,75 @@ height: 29px;
     height: auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
 }
 
 main {
-    padding-right: 20px;
+    width: 75%;
     display: flex;
     flex-direction: column;
     border-right-color: gray;
     border-right-style: solid;
     border-right-width: 1px;
 }
- 
-#art {
-    display: flex;
-    flex-direction: column;
 
-}
-.article{ 
-height: 200px;
+
+article { 
+width:75%;
+height: 150px;
+padding-bottom: 12%;
 display: flex;
-flex-direction: row;
-align-content: flex-start;
-margin-left: 20px;
-padding: 0 0 30px 0;
+flex-wrap: wrap;
+margin-left: 25px;
 
 }
-.article title {
+.title {
+    margin:0;
+    width: 75%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-content:flex-start;
     margin-right: 20px;
-   
- 
+    text-align: left;
+    column-gap: 2px;
 }
-.article img {
-    width: 250px;
-    height: 150px;
-    margin: 20px 10px 0 0;
+.title ul {
+    margin:0;
+    width: 100%;
+    color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size:9pt; 
+}
+
+.text {
+    display: flex;
+    justify-content: space-around;
+}
+article.image {
+    width: 25%;
+    height: 50%;
+    display: inline;
+}
+
+.image img {
+    height:100x;
+    width: 235px;
+    position: absolute;
+    overflow: hidden;
+}
+
+article button {
+    background-color: white;
+    border:none;
+    display: inline;
     
 }
 
-.title h1 {
-  font-size: 14pt;
+
+.title h2 {
+  font-size: 12pt;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -104,32 +128,10 @@ padding: 0 0 30px 0;
     color: rgb(99, 97, 97);
 }
 
-.title span {
-    font-size: 10pt;
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    
-}
-
-.topbar {
-display: flex;
-flex-direction: row;
-align-content: flex-start;
-margin-bottom: 20px;
-   
-}
-
-.topbar span {
-    padding: 8px;
-    font-style: bold;
-    font-size: 12pt;
-}
-
 aside {
     font-size: 12pt;
-    width: 33%;
+    width: 30%;
     margin-left: 20px;    
-    text-decoration: none;
 }
 
 nav {
@@ -139,14 +141,13 @@ nav {
 
 .connect {
     width: 100%;
-    height: 250px;
+    height: 230px;
     padding: 10px 0 40px 10px;
     font-size: 11pt;
     font-weight: 300;
     border-bottom-color: gray;
     border-bottom-style: solid;
     border-bottom-width: 1px;
-    position: relative;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -180,7 +181,7 @@ nav {
 .topics {
     width: 100%;
     height: 350px;
-    margin-top: 100px;
+    margin-top: 10%;
     display: flex;
     text-align: left;
     font-weight: 600;
@@ -205,9 +206,9 @@ nav {
 .keywords li {
     background-color: ghostwhite;
     color:gray;
-    width: 80px;
-    height: 35px;
-    margin: 5px  5px 5px;
+    width: 75px;
+    height: 30px;
+    margin: 5px 0 5px 5px;
     padding: 5px 10px 5px 10px;
     font-size: 10pt;
     border-radius: 20px;
@@ -217,23 +218,18 @@ nav {
 }
 
 
-.accs {
+.accs li {
     list-style: none;
     font-style: 7pt;
     font-weight: 600;
 } 
 
-.accs li {
+.user {
     margin-bottom:25px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: baseline;
     font-size: 9pt;
-}
-
-.accs a {
-    margin-right: 15px;
-    margin-top:10px;
-    color:black;
 }
 
 .accs button {
@@ -244,7 +240,6 @@ margin-top:7px;
     background-color: white;
     border:solid 1px gray;
     font-size: 10pt;
-
 }
 
 .accs img {
@@ -254,10 +249,24 @@ margin-top:7px;
 
 }
 
-.accs li span {
+.info {
     display: flex;
+    flex-direction: column;
     align-content: center;
-    font-size: 8pt;
-    font-weight: lighter;
+    font-size: 7pt;
     color:gray;
+}
+
+
+.saved {
+    font-size: 10pt;
+}
+
+.saved p {
+    font-weight: 400;
+}
+
+.saved item {
+    font-weight: 100;
+    font-size: small;
 }
